@@ -42,7 +42,7 @@ if os.path.isfile(os.path.abspath('.config/openbox/lxde-pi-rc.xml')):
         print 'Adding shorcut to launch lxterminal'
         newFileContents = re.sub('</keybind>\s+</keyboard>', newStyleText, oldFileContent)
 
-        with open(os.path.abspath('.config/openbox/lxde-rc.xml'), 'w') as configFile:
+        with open(os.path.abspath('.config/openbox/lxde-pi-rc.xml'), 'w') as configFile:
             configFile.write(newFileContents)
 
         print 'You will need to reboot before the keyboard shortcut will work.'
